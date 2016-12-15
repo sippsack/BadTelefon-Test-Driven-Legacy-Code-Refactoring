@@ -3,13 +3,21 @@ package de.oio.refactoring.badtelefon;
 public class Kunde {
 	double gebuehr = 0.0;
 	Tarif tarif;
-	
+
+	private Rabatt rabatt;
+
 	public Kunde(int tarifArt) {
+		this(tarifArt, new Rabatt(0));
+	}
+
+	public Kunde(int tarifArt, Rabatt rabatt) {
 		this.tarif = new Tarif(tarifArt);
+		this.rabatt = rabatt;
 	}
 
 	public void account(int minuten, int stunde, int minute) {
-		String message1 = String.format("Berechne Gespräch mit %02d min um %02d:%02d mit Tarif %s", minuten, stunde, minute, tarif.tarif);
+		String message1 = String.format("Berechne Gespräch mit %02d min um %02d:%02d mit Tarif %s", minuten, stunde,
+				minute, tarif.tarif);
 		System.out.println(message1);
 		boolean mondschein = false;
 		double preis = 0;
@@ -45,19 +53,20 @@ public class Kunde {
 		String message2 = String.format("Preis für das Gespräch: %.2f", preis);
 		System.out.println(message2);
 
-		// TODO: berechne Gesprächsrabatt
+		preis = rabatt.berechneNetto(preis);
 
 		saveCall(minuten, stunde, minute, preis);
-		
+
 		gebuehr += preis;
-		String message3 = String.format("Gesamtgebühr nach Gespräch um %02d:%02d (Mondscheinzeit: %s): %.2f", stunde, minute, mondschein, gebuehr);
+		String message3 = String.format("Gesamtgebühr nach Gespräch um %02d:%02d (Mondscheinzeit: %s): %.2f", stunde,
+				minute, mondschein, gebuehr);
 		System.out.println(message3);
 	}
 
 	protected void saveCall(int minuten, int stunde, int minute, double preis) {
 		// DB-Zugriff
 		// Verbindung öffnen
-//		throw new RuntimeException("could not open connection");
+//		 throw new RuntimeException("could not open connection");
 		// Statement erzeugen
 		// Abfrage abschicken
 		// Resultset auswerten
