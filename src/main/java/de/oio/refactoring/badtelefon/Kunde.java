@@ -4,8 +4,15 @@ public class Kunde {
 	double gebuehr = 0.0;
 	Tarif tarif;
 	
+	private Rabatt rabatt;
+
 	public Kunde(int tarifArt) {
+		this(tarifArt, new Rabatt(0));
+	}
+
+	public Kunde(int tarifArt, Rabatt rabatt) {
 		this.tarif = new Tarif(tarifArt);
+		this.rabatt = rabatt;
 	}
 
 	public void account(int minuten, int stunde, int minute) {
@@ -46,6 +53,7 @@ public class Kunde {
 		System.out.println(message2);
 
 		// TODO: berechne Gesprächsrabatt
+		preis = rabatt.berechneNetto(preis);
 
 		saveCall(minuten, stunde, minute, preis);
 		
