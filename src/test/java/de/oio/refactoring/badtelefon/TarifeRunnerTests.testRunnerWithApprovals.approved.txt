@@ -1,0 +1,54 @@
+
+Verarbeitung von Tarif 0
+Berechne Gespräch mit 10 min um 12:30 mit Tarif 0
+Preis für das Gespräch: 17,91
+Gesamtgebühr nach Gespräch um 12:30 (Mondscheinzeit: false): 17,91
+Berechne Gespräch mit 01 min um 09:45 mit Tarif 0
+Preis für das Gespräch: 0,00
+Gesamtgebühr nach Gespräch um 09:45 (Mondscheinzeit: false): 17,91
+Berechne Gespräch mit 03 min um 18:00 mit Tarif 0
+Preis für das Gespräch: 3,98
+Gesamtgebühr nach Gespräch um 18:00 (Mondscheinzeit: false): 21,89
+Berechne Gespräch mit 02 min um 17:45 mit Tarif 0
+Preis für das Gespräch: 1,99
+Gesamtgebühr nach Gespräch um 17:45 (Mondscheinzeit: false): 23,88
+Berechne Gespräch mit 06 min um 23:30 mit Tarif 0
+Preis für das Gespräch: 3,45
+Gesamtgebühr nach Gespräch um 23:30 (Mondscheinzeit: true): 27,33
+Abrechnung: 27.33
+
+Verarbeitung von Tarif 1
+Berechne Gespräch mit 10 min um 12:30 mit Tarif 1
+Preis für das Gespräch: 12,90
+Gesamtgebühr nach Gespräch um 12:30 (Mondscheinzeit: false): 12,90
+Berechne Gespräch mit 01 min um 09:45 mit Tarif 1
+Preis für das Gespräch: 1,29
+Gesamtgebühr nach Gespräch um 09:45 (Mondscheinzeit: false): 14,19
+Berechne Gespräch mit 03 min um 18:00 mit Tarif 1
+Preis für das Gespräch: 3,87
+Gesamtgebühr nach Gespräch um 18:00 (Mondscheinzeit: false): 18,06
+Berechne Gespräch mit 02 min um 17:45 mit Tarif 1
+Preis für das Gespräch: 2,58
+Gesamtgebühr nach Gespräch um 17:45 (Mondscheinzeit: false): 20,64
+Berechne Gespräch mit 06 min um 23:30 mit Tarif 1
+Preis für das Gespräch: 4,74
+Gesamtgebühr nach Gespräch um 23:30 (Mondscheinzeit: true): 25,38
+Abrechnung: 25.380000000000003
+
+Verarbeitung von Tarif 2
+Berechne Gespräch mit 10 min um 12:30 mit Tarif 2
+Preis für das Gespräch: 6,90
+Gesamtgebühr nach Gespräch um 12:30 (Mondscheinzeit: false): 6,90
+Berechne Gespräch mit 01 min um 09:45 mit Tarif 2
+Preis für das Gespräch: 0,69
+Gesamtgebühr nach Gespräch um 09:45 (Mondscheinzeit: false): 7,59
+Berechne Gespräch mit 03 min um 18:00 mit Tarif 2
+Preis für das Gespräch: 2,07
+Gesamtgebühr nach Gespräch um 18:00 (Mondscheinzeit: false): 9,66
+Berechne Gespräch mit 02 min um 17:45 mit Tarif 2
+Preis für das Gespräch: 1,38
+Gesamtgebühr nach Gespräch um 17:45 (Mondscheinzeit: false): 11,04
+Berechne Gespräch mit 06 min um 23:30 mit Tarif 2
+Preis für das Gespräch: 4,14
+Gesamtgebühr nach Gespräch um 23:30 (Mondscheinzeit: true): 15,18
+Abrechnung: 15.18
