@@ -12,3 +12,4 @@
 hs_err_pid*
 /target/
 src/test/java/de/oio/refactoring/badtelefon/TarifeRunnerTests.testRunnerWithApprovals.approved.txt
+*.approved.txt
